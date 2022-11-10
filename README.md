@@ -1,5 +1,5 @@
 # Importación de autos.
-#### * TC1033.301-Project*
+#### TC1033.301-Project
 #### Nombre: Emanuel Vega
 #### ID: A01710366
 
@@ -9,11 +9,18 @@ El problema a resolver es modelar una agencia de autos la cual se dedica a impor
 
 ## Instrucciones
 
--Descargar los archivos y colocarlos en una misma carpeta.
+- Descargar los archivos y colocarlos en una misma carpeta.
+
 **Opción 1:**
--Compilar el programa en terminal con: gpp main.cpp -o programa (nombre deseado)
--Correr el programa en consola con: programa.exe
+
+- Compilar el programa en terminal con: gpp main.cpp -o programa (nombre deseado)
+
+- Correr el programa en consola con: programa.exe
+
 **Opción 2:**
--Compilar el programa en terminal con: gpp main.cpp
--Correr el programa en consola con: a.exe
-//Nota: Esto es usando el compilador gpp de MinGW en Windows.//
+
+- Compilar el programa en terminal con: gpp main.cpp
+
+- Correr el programa en consola con: a.exe
+
+*Nota: Esto es usando el compilador gpp de MinGW en Windows.*
