@@ -9,7 +9,7 @@ private:
   string nombre, correo, celular;
   
 public:
-  Asesor();
+  Asesor(): nombre(""), correo(""), celular(""){};
   Asesor(string nom, string corr, string cel): nombre(nom), correo(corr), celular(cel){};
 
   string get_nombre();

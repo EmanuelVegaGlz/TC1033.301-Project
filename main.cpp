@@ -68,15 +68,15 @@ int main(){
     string mail_cliente;
     cout << "Por favor dejenos su email para ponernos en contacto: ";
     cin >> mail_cliente;
-    cout << "Le enviaermos la informacion pertinente para darle continuidad";
+    cout << "Le enviaermos la informacion pertinente para darle continuidad" << endl;
 
-    cout << "Gracias por la confianza y dejarnos importar tus sueños";
+    cout << "Gracias por la confianza y dejarnos importar tus anhelos" <<endl;
 
-    cout << "       ──▄▄▐▀▀▀▀▀▀▀▀▀▀▀▌▄▄──  " << endl;
-    cout << "       ─▄▄▄█▄▄▄▄▄▄▄▄▄▄▄█▄▄▄─  " << endl;
-    cout << "       ─█▄█░░█▓█▓█▓█▓█░░█▄█▌  " << endl;
-    cout << "       ─▓▓█▀███████████▀█▓▓── " << endl;
-    cout << "       ─▓▓▀▀───────────▀▀▓▓── " << endl;
+
+cout << "     ______      " << endl;
+cout << "    /|_||_ `.__    " << endl;
+cout << "   (   _    _ _|   " << endl;
+cout << "   =`-(_)--(_)-'   " << endl;
     
     return 0;
 }

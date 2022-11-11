@@ -9,7 +9,7 @@ private:
   string ubicacion, nombre;
   
 public:
-  Agencia();
+  Agencia(): ubicacion(""), nombre(""){};
   Agencia(string ubi, string nom): ubicacion(ubi), nombre(nom){};
 
   string get_ubicacion();

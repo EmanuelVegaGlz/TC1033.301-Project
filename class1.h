@@ -11,8 +11,9 @@ private:
   int year;
 
 public:
-  Auto();
-  Auto(string mar, int yr, string mod, string col): marca(mar), modelo(mod), year(yr), color(col){};
+  Auto(): marca(""), modelo(""), year(0), color(""){};
+  Auto(string mar, int yr, string mod, string col): 
+  marca(mar), modelo(mod), year(yr), color(col){};
 
   string get_marca();
   string get_modelo();
