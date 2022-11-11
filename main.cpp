@@ -49,9 +49,9 @@ int main(){
     case 2:
         agencia_selec = dealer2.get_nombre() + dealer2.get_ubicacion();
         cout << "Agencia seleccionada con exito" << endl;
+        break;
     default:
         cout << "Sucursal no encontrada";
-        break;
     }
 
     Asesor empleado1;
@@ -73,7 +73,7 @@ int main(){
     cout << "Gracias por la confianza y dejarnos importar tus anhelos" <<endl;
 
 
-cout << "     ______      " << endl;
+cout << "     ______        " << endl;
 cout << "    /|_||_ `.__    " << endl;
 cout << "   (   _    _ _|   " << endl;
 cout << "   =`-(_)--(_)-'   " << endl;
