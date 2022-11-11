@@ -14,7 +14,9 @@ int main(){
     coche1.set_modelo("M4");
     coche1.set_year(2022);
     coche1.set_color("Azul");
-    float price = calcula_precio();
+    string marca = coche1.get_marca();
+    int year = coche1.get_year();
+    float price = coche1.calcula_precio();
 
     cout << "Su pedido: " << endl;
     cout << coche1.get_marca() << endl;
@@ -58,24 +60,25 @@ int main(){
     empleado1.set_celular("55 8899 0001");
     empleado1.set_correo("julian@importacionescpp.com");
 
-    cout << "Su asesor designado es: " << empleado1.nombre() << endl;
+    cout << "Su asesor designado es: " << empleado1.get_nombre() << endl;
     cout << "Puede contactarlo mediante los siguiente medios:" << endl;
-    cout << "Celular: " << empleado1.get_celular << endl;
-    cout << "E-mail: " << empleado1.get_correo << endl;
+    cout << "Celular: " << empleado1.get_celular() << endl;
+    cout << "E-mail: " << empleado1.get_correo() << endl;
 
     string mail_cliente;
     cout << "Por favor dejenos su email para ponernos en contacto: ";
-    cin << mail_cliente;
-    cout << "Le enviaermos la informacion pertinente para darle continuidad"
+    cin >> mail_cliente;
+    cout << "Le enviaermos la informacion pertinente para darle continuidad";
 
-    cout << "Gracias por la confianza y dejarnos importar tus sueños"
+    cout << "Gracias por la confianza y dejarnos importar tus sueños";
 
     cout << "       ──▄▄▐▀▀▀▀▀▀▀▀▀▀▀▌▄▄──  " << endl;
     cout << "       ─▄▄▄█▄▄▄▄▄▄▄▄▄▄▄█▄▄▄─  " << endl;
     cout << "       ─█▄█░░█▓█▓█▓█▓█░░█▄█▌  " << endl;
     cout << "       ─▓▓█▀███████████▀█▓▓── " << endl;
     cout << "       ─▓▓▀▀───────────▀▀▓▓── " << endl;
-
+    
+    return 0;
 }
 
   

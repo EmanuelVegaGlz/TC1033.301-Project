@@ -22,7 +22,7 @@ public:
   void set_marca(string );
   void set_modelo(string );
   void set_year(int );
-  void set_color(string )
+  void set_color(string );
 
   float calcula_precio();
 
@@ -62,10 +62,11 @@ void Auto::set_color(string col){
 }
 
 float Auto::calcula_precio(){
-    if (year == 2022 && modelo == BMW)
+    if (year == 2022 && marca == "BMW")
       return 500000.0;
-    else if (2010 <= year <2022)
-      return 200000.0;
     else
-    return 100000.0
+      if (2010 <= year && year < 2022)
+        return 200000.0;
+      else
+        return 100000.0;
 }
