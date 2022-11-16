@@ -13,9 +13,8 @@ El problema a resolver es modelar una agencia de autos la cual se dedica a impor
 
 **Opción 1:**
 
-- Compilar el programa en terminal con: g++ main.cpp -o programa (nombre deseado)
+- Compilar el programa en terminal con: g++ main.cpp -o **programa** (nombre deseado)
 
-- Correr el programa en consola con: programa.exe
 
 **Opción 2:**
 
