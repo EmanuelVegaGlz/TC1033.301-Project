@@ -114,9 +114,15 @@ protected:
     bool awd;
     bool offroad;
 public:
-    Suv():Auto(){}
-    Suv(string mar, string mod, string col, float pre, int yr, int pot, int tra):
-      Auto(mar,mod,col,pre,yr,pot,tra){}
+    Suv():Auto(){
+      awd = 0;
+      offroad = 0;
+    }
+    Suv(string mar, string mod, string col, float pre, int yr, int pot, int tra, bool a, bool off):
+      Auto(mar,mod,col,pre,yr,pot,tra){
+        awd = a;
+        offroad = off;
+      }
 
     bool get_awd(){
       return awd;
@@ -143,9 +149,15 @@ protected:
     int tamanio_llantas;
 
 public:
-    Sedan():Auto(){}
-    Sedan(string mar, string mod, string col, float pre, int yr, int pot, int tra):
-      Auto(mar,mod,col,pre,yr,pot,tra){}
+    Sedan():Auto(){
+      convertible = 0;
+      tamanio_llantas = 0;
+      }
+    Sedan(string mar, string mod, string col, float pre, int yr, int pot, int tra, bool c, int tl):
+      Auto(mar,mod,col,pre,yr,pot,tra){
+        convertible = c;
+        tamanio_llantas = tl;
+      }
 
     bool get_convertible(){
       return convertible;
@@ -172,9 +184,15 @@ protected:
     float capacidad_cajuela;
 
 public:
-    Hatchback():Auto(){}
-    Hatchback(string mar, string mod, string col, float pre, int yr, int pot, int tra):
-      Auto(mar,mod,col,pre,yr,pot,tra){}
+    Hatchback():Auto(){
+      numero_puertas = 0;
+      capacidad_cajuela = 0;
+    }
+    Hatchback(string mar, string mod, string col, float pre, int yr, int pot, int tra, int np, float cc):
+      Auto(mar,mod,col,pre,yr,pot,tra){
+        numero_puertas = np;
+        capacidad_cajuela = cc;
+      }
 
     int get_puertas(){
       return numero_puertas;
