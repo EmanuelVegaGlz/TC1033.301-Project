@@ -5,7 +5,7 @@ using namespace std;
 
 class Auto{
 
-private:
+protected:
   string marca, modelo, color;
   float precio;
   int year, potencia;
@@ -105,3 +105,89 @@ float Auto::calcula_precio(){
       else
         return 100000.0;
 }
+
+//Clase Suv
+
+class Suv: public Auto{
+
+protected:
+    bool awd;
+    bool offroad;
+public:
+    Suv():Auto(){}
+    Suv(string mar, string mod, string col, float pre, int yr, int pot, int tra):
+      Auto(mar,mod,col,pre,yr,pot,tra){}
+
+    bool get_awd(){
+      return awd;
+    }
+
+    bool get_offroad(){
+      return offroad;
+    }
+    
+    void set_awd(bool a){
+      a = awd;
+    }
+    void set_offroad(bool o){
+      o = offroad;
+    }
+};
+
+//Clase Sedan
+
+class Sedan: public Auto{
+
+protected:
+    bool convertible;
+    int tamanio_llantas;
+
+public:
+    Sedan():Auto(){}
+    Sedan(string mar, string mod, string col, float pre, int yr, int pot, int tra):
+      Auto(mar,mod,col,pre,yr,pot,tra){}
+
+    bool get_convertible(){
+      return convertible;
+    }
+
+    int get_tamanio(){
+      return tamanio_llantas;
+    }
+    
+    void set_convertible(bool c){
+      c = convertible;
+    }
+    void set_tamanio(int t){
+      t = tamanio_llantas;
+    }
+};
+
+//Clase Hatchback
+
+class Hatchback: public Auto{
+
+protected:
+    int numero_puertas;
+    float capacidad_cajuela;
+
+public:
+    Hatchback():Auto(){}
+    Hatchback(string mar, string mod, string col, float pre, int yr, int pot, int tra):
+      Auto(mar,mod,col,pre,yr,pot,tra){}
+
+    int get_puertas(){
+      return numero_puertas;
+    }
+
+    float get_capacidad(){
+      return capacidad_cajuela;
+    }
+    
+    void set_puertas(int p){
+      p = numero_puertas;
+    }
+    void set_capacidad(float c){
+      c = capacidad_cajuela;
+    }
+};
