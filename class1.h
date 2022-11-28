@@ -10,11 +10,12 @@ protected:
   float precio;
   int year, potencia;
   int transmision;
+  string tipo;
   
 
 public:
   Auto(): marca(""), modelo(""), color(""), precio(0.0), 
-    year(0), potencia(0), transmision(0){};
+    year(0), potencia(0), transmision(0), tipo(""){};
   
   Auto(string mar, string mod, string col, float pre, int yr, int pot, int tra): 
     marca(mar), modelo(mod), color(col), precio(pre),
@@ -26,6 +27,7 @@ public:
   int get_year();
   int get_potencia();
   string get_transmision();
+  string get_tipo();
 
   void set_marca(string );
   void set_modelo(string );
@@ -66,6 +68,10 @@ string Auto::get_transmision(){
     else
       return "Manual";
 }
+
+string Auto::get_tipo(){
+      return tipo;
+    }
 
 //Setters
 
@@ -111,6 +117,7 @@ float Auto::calcula_precio(){
 class Suv: public Auto{
 
 protected:
+    string tipo = "SUV";
     bool awd;
     bool offroad;
 public:
@@ -145,6 +152,7 @@ public:
 class Sedan: public Auto{
 
 protected:
+    string tipo = "Convertible";
     bool convertible;
     int tamanio_llantas;
 
@@ -180,6 +188,7 @@ public:
 class Hatchback: public Auto{
 
 protected:
+    string tipo = "Hatchback";
     int numero_puertas;
     float capacidad_cajuela;
 

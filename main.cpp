@@ -13,21 +13,24 @@ int main(){
      cout << "Que tipo de vehiculo le interesa: " << "\n"
          << "1 SUV" << "\n"
          << "2 Sedan" << "\n"
-         << "3 Hatchback" << "\n";
+         << "3 Hatchback" << "\n"
+         << "Escriba el numero deseado: " << "\n";
+
+     int eleccion;
+
+     cin >> eleccion;
 
      Auto coche1;
-
-     int tipo_auto;
-     cin >> tipo_auto;
-     if(tipo_auto == 1)
+     if(eleccion == 1)
           Suv coche1;
      else
-          if(tipo_auto == 2)
+          if(eleccion == 2)
                Sedan coche1;
                          
           else
                Hatchback coche1;
-
+     
+     cout << coche1.get_tipo() << endl;
      string marc;
      cout << "Que marca le gustaria que fuera su auto: ";
      cin >> marc;
