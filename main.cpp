@@ -11,6 +11,12 @@ using namespace std;
 
 
 int main(){
+
+     Agencia dealer1 ("Santiago de Queretaro", "Queretacars");
+     Agencia dealer2;
+
+     dealer2.set_ubicacion("El Marques");
+     dealer2.set_nombre("Motor Power");
     
      cout << "Que tipo de vehiculo le interesa: " << "\n"
          << "1 SUV" << "\n"
@@ -24,25 +30,24 @@ int main(){
 
      if(eleccion == 1)
           Suv camioneta = configura_suv();
+          dealer1.set_suv(camioneta);
+          dealer2.set_suv(camioneta);
 
      else
           if(eleccion == 2)
           Sedan sedan = configura_sedan();
-                         
+          dealer1.set_sedan(sedan);
+          dealer2.set_sedan(sedan);
           else
                Hatchback hatch = configura_hatchback();
-     
-     
-     Agencia dealer1 ("Santiago de Queretaro", "Queretacars");
-     Agencia dealer2;
+               dealer1.set_hatchback(hatch);
+               dealer2.set_hatchback(hatch);
 
-     dealer2.set_ubicacion("El Marques");
-     dealer2.set_nombre("Motor Power");
 
      int opcion;
      cout << "Estas son nuestras agencias:" << endl;
-     cout << dealer1.get_nombre() << "," << dealer1.get_ubicacion() << endl;
-     cout << dealer2.get_nombre() << "," << dealer2.get_ubicacion() << endl;
+     cout << "1.-" << dealer1.get_nombre() << "," << dealer1.get_ubicacion() << endl;
+     cout << "2.-" << dealer2.get_nombre() << "," << dealer2.get_ubicacion() << endl;
      cout << "En que agencia desea recogerlo, escribe 1 o 2:";
      cin >> opcion;
      cout << endl;
@@ -53,6 +58,7 @@ int main(){
      {
      case 1:
           agencia_selec = dealer1.get_nombre() + "," + dealer1.get_ubicacion();
+          
           cout << "Agencia seleccionada con exito" << endl;
           break;
      case 2:

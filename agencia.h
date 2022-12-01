@@ -9,6 +9,9 @@ class Agencia{
 
 private:
   string ubicacion, nombre;
+  Suv lista_camionetas[2];
+  Sedan lista_sedanes[2];
+  Hatchback lista_hatch[2];
 
   
 public:
@@ -21,6 +24,10 @@ public:
 
   void set_ubicacion(string );
   void set_nombre(string );
+  void set_suv(Suv );
+  void set_sedan(Sedan );
+  void set_hatchback(Hatchback );
+
 
 };
 
@@ -38,4 +45,16 @@ void Agencia::set_ubicacion(string ubi){
 
 void Agencia::set_nombre(string nom){
     nombre = nom;
+}
+
+void Agencia::set_suv(Suv auto){
+    lista_camionetas[1] = auto;
+}
+
+void Agencia::set_sedan(Sedan auto){
+  lista_sedanes[1] = auto;
+}
+
+void Agencia::set_hatchback(Hatchback auto){
+  lista_hatch[1] = auto;
 }
